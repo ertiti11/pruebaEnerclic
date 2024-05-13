@@ -8,7 +8,7 @@ class Server:
         """
         Initialize the server with the IP and port number
         """
-        self.ip = "127.0.0.1"
+        self.ip = "0.0.0.0"
         self.port = 4444
         self.server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.server.bind((self.ip, self.port))

@@ -3,7 +3,7 @@ import threading
 
 class Client:
     def __init__(self):
-        self.ip = "127.0.0.1"
+        self.ip = "172.17.0.2"
         self.port = 4444
         self.client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.client.connect((self.ip, self.port))
